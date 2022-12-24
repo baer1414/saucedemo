@@ -24,12 +24,12 @@ public class Purchase_StepDefs {
 
     @And("ec ucuz ürünü sepete at")
     public void ecUcuzÜrünüSepeteAt() {
-        JavascriptExecutor javascriptExecutor=(JavascriptExecutor) Driver.get();
-        javascriptExecutor.executeScript("window.scrollBy(0,500)");
+       // JavascriptExecutor javascriptExecutor=(JavascriptExecutor) Driver.get();
+        //javascriptExecutor.executeScript("window.scrollBy(0,500)");
         BrowserUtilies.waitFor(2);
          productPage.Enucuzbtn.click();
 
-        javascriptExecutor.executeScript("window.scrollBy(0,-500)");
+      //  javascriptExecutor.executeScript("window.scrollBy(0,-500)");
         BrowserUtilies.waitFor(2);
     }
 
